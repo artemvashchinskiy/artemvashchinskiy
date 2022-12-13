@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CSS Template</title>
+<link rel="icon" type="image/x-icon" href="favicon.ico">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+header {
+  background-color: #666;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: left;
+  width: 20%;
+  height: 400px; /* only for demonstration, should be removed */
+  background: #ccc;
+  padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+article {
+  float: left;
+  padding: 20px;
+  width: 80%;
+  background-color: #f1f1f1;
+  height: 400px; /* only for demonstration, should be removed */
+}
+
+/* Clear floats after the columns */
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+footer {
+  background-color: #777;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+</style>
+</head>
+<body>
+
+
+<header>
+  <img src="favicon.ico" alt="Italian Trulli" style="width:32px;height:32px; float: right;">
+  <h2>Artem Vashchinskiy</h2>
+</header>
+
+<section>
+  <nav>
+    <ul>
+      <li style="float: none"><a href="2Self-Improvement.html">Self-Improvement</a></li>
+      <li style="float: none"><a href="3Building yourself.html">Building yourself</a></li>
+      <li style="float: none"><a href="4Dreamers.html">Dreamers</a></li>
+    </ul>
+	<iframe style="margin-left: 50px; margin-top: 50px;" src="https://free.timeanddate.com/clock/i8is7nxt/n5871/szw110/szh110/hoc222/hbw6/cf100/hgr0/hcw2/hcd88/fan2/fas20/fnu2/fdi70/mqc000/mqs3/mql13/mqw4/mqd94/mhc000/mhs3/mhl13/mhw2/mhd94/mmc000/mml5/mmw1/mmd94/hwm2/hhs2/hhb18/hms2/hml80/hmb18/hmr7/hscf09/hss1/hsl90/hsr5" frameborder="0" width="110" height="110"></iframe>
+  </nav>
+    
+  <article>
+    <h1 style="text-align: center;">Buddha Quotes</h1>
+    <p>Buddha was a spiritual teacher in Nepal during the 6th century B.C. whose teachings became the foundation for the Buddhist religion. One of the most influential spiritual leaders of all time, Buddha (born with the name Siddhartha Gautama), was a philosopher who spoke extensively about peace, life, love, happiness, and death. The name Buddha itself means "one who is awakened" or "the enlightened one," which says a lot about what he taught others.</p>
+    <p>""Radiate boundless love towards the entire world.""</p>
+	<p>""A disciplined mind brings happiness.""</p>
+	<p>""Give, even if you only have a little.""</p>
+	<p>""Conquer anger with non-anger. Conquer badness with goodness. Conquer meanness with generosity. Conquer dishonesty with truth.""</p>
+	<p>"Drop by drop is the water pot filled. Likewise, the wise man, gathering it little by little, fills himself with good.""</p>
+  </article>
+</section>
+
+  <!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+.menu {
+  float: left;
+  width: 20%;
+  text-align: center;
+}
+
+.menu a {
+  background-color: #e5e5e5;
+  padding: 8px;
+  margin-top: 7px;
+  display: block;
+  width: 100%;
+  color: black;
+}
+
+.main {
+  float: left;
+  width: 60%;
+  padding: 0 20px;
+}
+
+.right {
+  background-color: #e5e5e5;
+  float: left;
+  width: 20%;
+  padding: 15px;
+  margin-top: 7px;
+  text-align: center;
+}
+
+@media only screen and (max-width: 620px) {
+  /* For mobile phones: */
+  .menu, .main, .right {
+    width: 100%;
+  }
+}
+</style>
+
+</head>
+<body style="font-family:Verdana;color:#aaaaaa;">
+
+<div style="background-color:#e5e5e5;padding:15px;text-align:center;">
+  <h1>Hello My Guest</h1>
+</div>
+
+<div style="overflow:auto">
+  <div class="menu">
+    <a href="5Volunteering.html">Volunteering</a>
+    <a href="6Cultivating Happiness.html">Cultivating Happiness</a>
+    <a href="7Animal shelter.html">Animal shelter</a>
+    <a href="8Take out the trash.html">Take out the trash</a>
+	<br><br>
+	<p>Log In, Register or Subscribe</p>
+	<form action="/action_page.php">
+  <fieldset>
+    <legend>Sign up</legend>
+	<form action="/action_page.php" autocomplete="on">
+	  <label for="phone">Enter a phone number:</label><br>
+  <input type="tel" id="phone" name="phone" placeholder="+15-854-380-127" pattern="[0-9]{2}-[0-9]{3}-[0-9]{3}-[0-9]{3}" required><br>
+  <label for="email">Enter your email:</label>
+  <input type="email" id="email" name="email" required>
+  <label for="pwd">Password:</label><br>
+  <input type="password" id="pwd" name="pwd" required><br><br>
+  <input type="checkbox" id="terms" name="terms" value="terms">
+  <label for="vehicle1"> I have read and agree with <a style=
+  "background-color: white;
+  padding: 0px;
+  margin-top: 0px;
+  display: inline;
+  width: 100%;
+  color: #aaaaaa;" href="18Terms & Conditions.html">terms & conditions</a> </label><br>
+  <a href="9Buddha Quotes.html">Log In</a>
+  </fieldset>
+</form>
+  </div>
+  
+    <div class="main">
+    <h2 style="text-align: center;">Digital media</h2>
+    <p>Digital media connects people in ways never before possible, enabling users to maintain friendships across time and distance. It enables those who are socially isolated or somehow set apart from their immediate physical community to connect with like-minded or like-situated people. Digital media also facilitates interaction across social, 
+	economic, cultural, political, religious and ideological boundaries, allowing for enhanced understanding.</p> 
+	<p>Many people access social media platforms to express empathy and receive support from friends and family, including in times of emotional distress. This enriches people’s relationships and their ability to stay in touch, and the ability 
+	of friends and family to identify and help loved ones in need. According to a 2015 survey by Pew Research Center, the use of social technology is linked to having a greater number of close confidants, as well as a larger, more diverse social circle. Another Pew survey showed that 57% of teens state they have made a new friend online, and 83% 
+	state that social media makes them feel more connected and informed about their friends’ lives.</p>
+	<p>Social media can help to deepen relationships and facilitate the formation of support networks – 68% of teen social media users have received support on these platforms during tough times.</p>	
+	<h3><strong>Self-Confident Corner</strong></h3>
+	<fieldset>
+    <legend>How Self-Confident Are You?</legend>
+		<form action="/action_page.php"
+oninput="x.value=parseInt(vol1.value)+parseInt(vol2.value)+parseInt(vol3.value)+parseInt(vol4.value)+parseInt(vol5.value)+parseInt(vol6.value)+parseInt(vol7.value)">
+<label for="vol">I feel positive and energized about life.</label><br>
+  <input type="range" id="vol1" name="vol1" value="1" step="1" min="0" max="10"><br>
+  <label for="vol">I keep trying, even after others have given up.</label><br>
+  <input type="range" id="vol2" name="vol2" value="1" step="1" min="0" max="10"><br>
+    <label for="vol">If I work hard to solve a problem, I'll find the answer.</label><br>
+  <input type="range" id="vol3" name="vol3" value="1" step="1" min="0" max="10"><br>
+    <label for="vol">I achieve the goals I set for myself.</label><br>
+  <input type="range" id="vol4" name="vol4" value="1" step="1" min="0" max="10"><br>
+    <label for="vol">When I overcome an obstacle, I think about the lessons I've learned.</label><br>
+  <input type="range" id="vol5" name="vol5" value="1" step="1" min="0" max="10"><br>
+    <label for="vol">I believe that if I work hard, I'll achieve my goals.</label><br>
+  <input type="range" id="vol6" name="vol6" value="1" step="1" min="0" max="10"><br>
+    <label for="vol">I have contact with people of similar skills and experience who I consider successful.</label><br>
+  <input type="range" id="vol7" name="vol7" value="1" step="1" min="0" max="10"><br><br>
+  <strong>Your score equals=
+    <output name="x" for="vol1 vol2 vol3 vol4 vol5 vol6 vol7"></output></strong>
+	<p>50-70=Excellent! You're doing a fabulous job of learning from every experience</p>
+</form>
+	 </fieldset>
+  <br><br>
+    </div>
+
+  <div class="right">
+    <h2>About</h2>
+    <p>It never ceases to amaze me how much time people waste searching endlessly for magic shortcuts to entrepreneurial success and fulfillment when the only real path is staring them right in the face: real entrepreneurs who start real businesses that employ real people who provide real products and services to real customers.
+Yes, I know that's hard. It's a lot of work. What can I say, that's life. Besides, look on the bright side: You get to do what you want and you get to do it your way. There's just one catch. You've got to start somewhere. Ideas and opportunities don't just materialize out of thin air.
+The only way I know to get started is by learning a marketable skill and getting to work. In my experience, that's where the ideas, opportunities, partners, and finances always seem to come from. Sure, it also takes an enormous amount of hard work, but that just comes with the territory.</p><br><br><br>
+<a style="background-color: #777;
+  padding: 8px;
+  margin-top: 7px;
+  display: block;
+  width: 100%;
+  color: white;" href="#top">On Top</a>
+  </div>
+</div>
+
+<p style="padding-left: 30px;">If you want to shine like a sun, first burn like a sun. <strong>A. P. J. Abdul Kalam<strong/></p>
+
+<div style="background-color:#e5e5e5;text-align:center;padding:10px;margin-top:7px;">© copyright Artem Vashchinskiy</div>
+
+</body>
+</html>
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111111;
+}
+</style>
+</head>
+<body>
+
+
+
+<ul>
+  <li><a href="1home.html">Home</a></li>
+  <li><a href="14news.html">News</a></li>
+  <li><a href="15Contact.html">Contact</a></li>
+  <li><a href="17about.html">About</a></li>
+</ul>
+
+</body>
+</html>
+
+
+  
+<footer>
+<br>
+<button type="button" onclick="alert('you can achieve it if you believe it')">Check Yourself</button>
+<br><br>
+  <input type="text" id="fname" name="fname" size="34" style="text-align: center;" value="Artem Vashchinskiy, All rights reserved" disabled><br>  
+</footer>
+
+</body>
+</html>
+
+
